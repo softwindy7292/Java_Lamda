@@ -12,8 +12,13 @@ class Printer implements Printable{
 public class LamdaMain {
 
 	public static void main(String[] args) {
-		System.out.println("hello");
-
+		Printable prn = new Printer();
+		
+		prn.print("냠냠");
+		
+		Printable prn2 = (s) -> System.out.println(s);
+		
+		prn2.print("람다란 이런 것 이다");
 	}
 
 }
